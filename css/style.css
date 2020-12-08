@@ -393,6 +393,18 @@ pre {
 
 .rocket {
   padding-top: 6rem;
+  -webkit-animation: action 0.8s infinite  alternate;
+  animation: action 0.8s infinite  alternate;
+  overflow: hidden;
+}
+
+@-webkit-keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-40px); }
+}
+@keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-40px); }
 }
 
 /* analysis */
